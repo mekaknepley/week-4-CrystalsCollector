@@ -1,0 +1,96 @@
+body {
+    background-image: url("../images/bg.jpeg");
+}
+
+.gameNameBox {
+    color: white;
+    font-size: 70px;
+    background-color: pink;
+    width: 600px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    /*float: clear;*/
+}
+
+.gameInfoBox {
+    color: white;
+    font-size: 16px;
+    background-color: pink;
+    padding:10px;
+    width: 600px;
+    height: 250px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    /*float: clear;*/
+
+}
+
+#randomNumberBox {
+    color: white;
+    font-size: 40px;
+    background-color: pink;
+    width: 150px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+     margin-right: 10px;
+}
+
+.winLoseBox {
+    color: white;
+    font-size: 30px;
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#crystalBox {
+    color: white;
+    font-size: 40px;
+    background-color: pink;
+    width: 500px;
+    height: 150px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.crystalImage {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+.boxPosition {
+    display:inline;
+    position: static;
+}
+
+.totalScoreBox {
+    color: white;
+    font-size: 40px;
+    background-color: pink;
+    width: 600px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+#crystalValueBox {
+    color: white;
+    font-size: 70px;
+    background-color: pink;
+    width: 600px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
