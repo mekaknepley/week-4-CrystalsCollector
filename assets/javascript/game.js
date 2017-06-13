@@ -11,7 +11,7 @@ var crystalPoints=[1,2,6,10];
 //functions
 // When the game starts there needs to be a random number on the screen
 function randomNum() {
-    displayedCrystalValue = Math.floor((Math.random() * 111) + 19);
+    displayedCrystalValue = Math.floor((Math.random() * 101) + 19);
     // document.getElementById("randomNumberBox").innerHTML = displayedCrystalValue;
     $("#randomNumberBox").html(displayedCrystalValue);
 }
@@ -58,7 +58,10 @@ function resetGame() {
     displayedCrystalValue =0;
     displayedYourScore =0;
     randomNum();
-    shuffleCrystalValue(crystalPoints);
+    //shuffleCrystalValue(crystalPoints);
+    for (var i = 0; i < crystalPoints.length; i++) {
+       crystalPoints[i] = Math.floor((Math.random() * 11) + 1); 
+    }
     printWinsAndLosses();
     $("#crystalValueBox").html("000");
 }
