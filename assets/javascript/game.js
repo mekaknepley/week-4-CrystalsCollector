@@ -1,7 +1,7 @@
 //vars
 //diplayed vars
 var displayedWins = 0;
-var diplayedLosses =0;
+var displayedLosses =0;
 var displayedCrystalValue =0;
 var displayedYourScore =0;
 var crystalPoints=[1,2,6,10];
@@ -11,9 +11,9 @@ var crystalPoints=[1,2,6,10];
 //functions
 // When the game starts there needs to be a random number on the screen
 function randomNum() {
-    var displayedCrystalValue = Math.floor((Math.random() * 45) + 15);
-   // document.getElementById("randomNumberBox").innerHTML = displayedCrystalValue;
-   $("#randomNumberBox").html(displayedCrystalValue);
+    displayedCrystalValue = Math.floor((Math.random() * 111) + 19);
+    // document.getElementById("randomNumberBox").innerHTML = displayedCrystalValue;
+    $("#randomNumberBox").html(displayedCrystalValue);
 }
 
 function shuffleCrystalValue(a) {
@@ -29,28 +29,60 @@ function shuffleCrystalValue(a) {
 function addToTotal(amount) {
     displayedYourScore += amount;
     $("#crystalValueBox").html(displayedYourScore);
+    checkWinOrLose();
 }
+
+function printWinsAndLosses()
+{
+    $("#winText").html("Wins: " + displayedWins);
+    $("#loseText").html("Losses: " + displayedLosses);
+}
+
+//win or lose function
+function checkWinOrLose() {
+    if (displayedYourScore == displayedCrystalValue) {
+        displayedWins++;
+        resetGame();
+    }
+    else if(displayedYourScore > displayedCrystalValue) {
+        displayedLosses++;
+        resetGame();
+    }
+}
+
+
+
+// reset function
+
+function resetGame() {
+    displayedCrystalValue =0;
+    displayedYourScore =0;
+    randomNum();
+    shuffleCrystalValue(crystalPoints);
+    printWinsAndLosses();
+    $("#crystalValueBox").html("000");
+}
+
+//events
 
 $("#idCrystal0").click(function(){
     addToTotal(crystalPoints[0]);
-
 });
 
 $("#idCrystal1").click(function(){
     addToTotal(crystalPoints[1]);
-
 });
+
 $("#idCrystal2").click(function(){
     addToTotal(crystalPoints[2]);
-
 });
 
 $("#idCrystal3").click(function(){
     addToTotal(crystalPoints[3]);
-
 });
-// reset function
 
-//events
-randomNum();
-shuffleCrystalValue(crystalPoints);
+$(document).ready(function() {
+   resetGame();
+});
+
+
