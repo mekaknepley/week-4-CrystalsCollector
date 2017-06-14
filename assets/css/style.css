@@ -1,27 +1,35 @@
 body {
     background-image: url("../images/bg.jpeg");
+    font-family:'Lobster', cursive;
 }
 
 .gameNameBox {
     color: white;
     font-size: 70px;
-    background-color: pink;
-    width: 600px;
+    /*text-shadow: 5px 5px 2px #cccccc;*/
+    text-shadow: 5px 5px 2px grey;
+    /*background-color: pink;*/
+    width: 1500px;
     height: 100px;
-    border: 1px solid blue;
     box-sizing: border-box;
+    text-align: center;
+    margin-top: 10px;
     /*float: clear;*/
+    
 }
 
 .gameInfoBox {
     color: white;
+    border-radius: 25px;
     font-size: 16px;
     background-color: pink;
-    padding:10px;
+    padding:20px;
     width: 600px;
     height: 250px;
-    border: 1px solid blue;
+    margin-top: 10px;
+    /*border: 1px solid blue;*/
     box-sizing: border-box;
+    box-shadow: 10px 10px 5px #888888;
     /*float: clear;*/
 
 }
@@ -30,39 +38,49 @@ body {
     color: white;
     font-size: 40px;
     background-color: pink;
+    border-radius: 25px;
     width: 150px;
     height: 100px;
-    border: 1px solid blue;
     box-sizing: border-box;
-     margin-right: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    /*box-shadow: 10px 10px 5px #888888;*/
 }
 
 .winLoseBox {
     color: white;
     font-size: 30px;
     background-color: pink;
+     border-radius: 25px;
     width: 200px;
     height: 100px;
-    border: 1px solid blue;
     box-sizing: border-box;
     margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    float: center;
 }
 
-#crystalBox {
+/*#crystalBox {
     color: white;
     font-size: 40px;
     background-color: pink;
+     border-radius: 25px;
     width: 500px;
     height: 150px;
-    border: 1px solid blue;
+    margin-top: 20px;
     box-sizing: border-box;
     position: relative;
-}
+    /*box-shadow: 10px 10px 5px #888888;
+}*/
 
 .crystalImage {
     width: 80px;
     height: 80px;
-    border: 1px solid red;
+    border: 5px solid pink;
     box-sizing: border-box;
     margin-left: 20px;
     margin-top:20px;
@@ -75,13 +93,16 @@ body {
 
 .totalScoreBox {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     background-color: pink;
+    border-radius: 25px;
     width: 600px;
-    height: 100px;
-    border: 1px solid blue;
+    height: 50px;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 20px;
+    padding-top: 5px;
+    box-shadow: 10px 10px 5px #888888;
 
 }
 
@@ -89,8 +110,11 @@ body {
     color: white;
     font-size: 70px;
     background-color: pink;
+    border-radius: 25px;
     width: 600px;
     height: 100px;
-    border: 1px solid blue;
     box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
 }

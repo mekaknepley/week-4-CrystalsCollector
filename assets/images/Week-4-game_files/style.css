@@ -1,0 +1,82 @@
+body {
+	background-image: url("../images/Bg.jpg");
+	background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*min-height: 500px;*/
+    background-position: center;
+    font-size: 50px;
+    font-family: overseer; /* make sure everyone can see the font*/
+	
+
+}
+
+p {
+    margin-top:1px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-color:red;
+}
+
+.characterDiv {
+    width: 128px;
+    height: 128px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position: relative;
+    background-color:sandybrown;
+    float: left;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.characterImage {
+	width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+#gameCharacter {
+	width: 500px;
+    height: 80px;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+	
+}
+
+#gameEnemies {
+	width: 600px;
+    height: 150px;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+	
+
+}
+
+#gameFightSelection {
+	font-size:30px;
+	width: 600px;
+    height: 50px;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+}
+
+#gameAttackButton {
+	font-size:20px;
+	width: 600px;
+    height: 50px;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+}
+
+#gameDefender {
+	width: 500px;
+    height: 150px;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+	
+}
