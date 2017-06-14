@@ -23,12 +23,17 @@
 </head>
 <body>
 <div class="gameNameBox">Crystals Collector</div>
+
+<div id="horse"><img id="horseImg" src="assets/images/horse.gif"></div>
+
 <div class="gameInfoBox"><p>You will be given a random number at the start of the game.
 There are four crystals below.<br><br> By clicking on a crystal you will add a specific amount of points to your total score.
 You will the game by matching your total score to random number, you lose the game if your total score goes above the random number.
 <br><br>The value of each crystal is hidden from you until you click on it.<br><br>
 Each time the game starts, the game will change the values of each crystal.
 </p></div>
+
+
 <div id="randomNumberBox"></div>
 <div class="winLoseBox">
 	<div id="winText">Wins: X</div>
@@ -40,6 +45,9 @@ Each time the game starts, the game will change the values of each crystal.
 	<div class="boxPosition" id="idCrystal2"><img src="assets/images/crystal7.jpeg" alt="crystal1" class="crystalImage"></div>
 	<div class="boxPosition" id="idCrystal3"><img src="assets/images/crystal8.jpeg" alt="crystal1" class="crystalImage"></div>
 </div>
+<audio id="buttonBeep">
+	<source src="assets/sounds/button.wav" type="audio/wav">
+</audio>
 <div class="totalScoreBox">Your total score is:</div>
 <div id="crystalValueBox">000</div>
 

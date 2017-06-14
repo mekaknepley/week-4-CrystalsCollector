@@ -27,6 +27,7 @@ function shuffleCrystalValue(a) {
 }
 
 function addToTotal(amount) {
+    $("#buttonBeep").trigger("play");
     displayedYourScore += amount;
     $("#crystalValueBox").html(displayedYourScore);
     checkWinOrLose();

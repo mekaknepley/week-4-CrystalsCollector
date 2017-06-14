@@ -61,7 +61,6 @@ body {
     margin-top: 20px;
     text-align: center;
     /*box-shadow: 10px 10px 5px #888888;*/
-    float: center;
 }
 
 /*#crystalBox {
@@ -117,4 +116,17 @@ body {
     margin-top: 20px;
     text-align: center;
     box-shadow: 10px 10px 5px #888888;
+}
+
+#horse {
+    float: left;
+    position: absolute;
+    z-index: -2;
+    border-style: solid;
+    border-top: thick double #888888;
+}
+
+#horseImg {
+    width: 1400px;
+    
 }
